@@ -22,6 +22,11 @@ permalink: /development.html
                     https://wiki.openttd.org/FAQ_development#I_want_to_become_an_official_OpenTTD_developer.21_How.3F
                 </a>
             </li>
+            <li>
+                <a href="https://github.com/OpenTTD/OpenTTD/blob/master/CONTRIBUTING.md">
+                    https://github.com/OpenTTD/OpenTTD/blob/master/CONTRIBUTING.md
+                </a>
+            </li>
         </ol>
 
         <h3>OpenTTD goals (from wiki)</h3>
@@ -47,6 +52,14 @@ permalink: /development.html
 
     <h2>Source</h2>
     <ol>
+        <li>
+            <p>For OpenTTD we use the <a href="https://git-scm.com/">git</a> version control system. OpenTTD's source code repository using git is accessible by anyone on the following URL:</p>
+            <ul>
+                <li><a href="https://github.com/OpenTTD/OpenTTD">https://github.com/OpenTTD/OpenTTD</a></li>
+            </ul>
+            <p>You can also <a href="https://github.com/OpenTTD/OpenTTD">browse</a> the repository online, or <a href="https://finger.openttd.org">query available versions</a> (for automated tools). The <a href="https://docs.openttd.org">documentation</a> of the source is created by DoxyGen.</p>
+            <p>To download the source code you need a git client. See <a href="https://git-scm.com/book/en/v1/Getting-Started">Getting Started</a> for more information about git and how to use it.</p>
+        </li>
         <li>
             Main repo
             <a href="https://github.com/OpenTTD/OpenTTD">
@@ -96,17 +109,34 @@ permalink: /development.html
             html docs - landscape etc
         </li>
         <li>
-            NoAI docs <a href="https://noai.openttd.org/api/">https://noai.openttd.org/api/</a>
-        </li>
-        <li>
-            NoGo docs <a href="https://nogo.openttd.org/api/">https://nogo.openttd.org/api/</a>
+            <h3>Development of AIs and Game Scripts</h3>
+            <p>OpenTTD provides a script interface, which is used to provide computer players or altered game behaviour and goals.</p>
+            <p>Scripts and associated libraries are written in squirrel (version 2) and need to make use of OpenTTD's API for Scripts. Useful resources include:</p>
+            <ul>
+                <li><a href="https://noai.openttd.org/api/">NoAI API</a> API for OpenTTD's AIs.</li>
+                <li><a href="https://nogo.openttd.org/api/">NoGo API</a> API for OpenTTD's Game Scripts.</li>
+                <li><a href="https://wiki.openttd.org/AI:Main_Page">Wiki</a>  Wiki section dedicated to Script development.</li>
+                <li><a href="https://www.tt-forums.net/viewforum.php?f=65">Forum</a> Forum dedicated to OpenTTD's Script development.</li>
+                <li><a href="http://squirrel-lang.org/doc/squirrel2.html">Squirrel 2 Reference</a> Reference manual for the squirrel language.</li>
+            </ul>
+            <p>Scripts can be made available to players via the <a href="https://bananas.openttd.org/en/manager/">online content</a>.</p>
         </li>
         <li>
             common entry points to the .cpp files
 
         </li>
         <li>
-            Newgrf wiki <a href="https://newgrf-specs.tt-wiki.net/wiki/Main_Page">https://newgrf-specs.tt-wiki.net/wiki/Main_Page</a>
+            <p>OpenTTD allows the use of NewGRFs and different base sets for graphics, sounds and music.</p>
+            <p>These files require special formats and you may need to use the following helper programs to assist with the creation of these add-ons:</p>
+            <p>Newgrf wiki <a href="https://newgrf-specs.tt-wiki.net/wiki/Main_Page">https://newgrf-specs.tt-wiki.net/wiki/Main_Page</a></p>
+            <ul>
+                <li><a href="http://bundles.openttdcoop.org/nml">nml</a> High-level language and compiler for writing NewGRFs. See also the <a href="http://newgrf-specs.tt-wiki.net/wiki/NML:Main">specs</a> and <a href="http://www.tt-wiki.net/wiki/NMLTutorial">tutorial</a></li>
+                <li><a href="https://www.openttd.org/en/download-grfcodec">grfcodec</a> Compiles NewGRF's low-level programming language NFO into a GRF file. Use the enclosed nforenum to check the code for sanity. See also the <a href="http://newgrf-specs.tt-wiki.net/wiki/Main_Page">specs</a> and <a href="http://www.tt-wiki.net/wiki/NFOTutorial">tutorial</a>.</li>
+                <li><a href="https://www.openttd.org/en/download-catcodec">catcodec</a> Compiles the sound set description file (sfo) and the sounds into a sound set</li>
+            </ul>
+            <p>For further help see the <a href="https://wiki.openttd.org/Development">wiki</a>, the <a href="http://dev.openttdcoop.org">DevZone</a> or visit the <a href="http://www.tt-forums.net/viewforum.php?f=66">forums</a>.</p>
+            <p>NewGRFs can be made available to players via the <a href="https://bananas.openttd.org/en/manager/">online content</a>.</p>
+
         </li>
     </ol>
 
@@ -153,16 +183,6 @@ permalink: /development.html
         <div class="section-icon"></div>
         <h3>Obtaining The Source Code</h3>
     </div>
-    <div class="section-item">
-        <div class="content">
-            <p>For OpenTTD we use the <a href="https://git-scm.com/">git</a> version control system. OpenTTD's source code repository using git is accessible by anyone on the following URL:</p>
-            <ul>
-                <li><a href="https://github.com/OpenTTD/OpenTTD">https://github.com/OpenTTD/OpenTTD</a></li>
-            </ul>
-            <p>You can also <a href="https://github.com/OpenTTD/OpenTTD">browse</a> the repository online, or <a href="https://finger.openttd.org">query available versions</a> (for automated tools). The <a href="https://docs.openttd.org">documentation</a> of the source is created by DoxyGen.</p>
-            <p>To download the source code you need a git client. See <a href="https://git-scm.com/book/en/v1/Getting-Started">Getting Started</a> for more information about git and how to use it.</p>
-        </div>
-    </div>
     <div class="section-header">
         <div class="section-icon"></div>
         <h3>Compiling</h3>
@@ -186,36 +206,5 @@ permalink: /development.html
     <div class="section-header">
         <div class="section-icon"></div>
         <h3>Development of NewGRF Extensions</h3>
-    </div>
-    <div class="section-item">
-        <div class="content">
-            <p>OpenTTD allows the use of NewGRFs and different base sets for graphics, sounds and music.</p>
-            <p>These files require special formats and you may need to use the following helper programs to assist with the creation of these add-ons:</p>
-            <ul>
-                <li><a href="http://bundles.openttdcoop.org/nml">nml</a> High-level language and compiler for writing NewGRFs. See also the <a href="http://newgrf-specs.tt-wiki.net/wiki/NML:Main">specs</a> and <a href="http://www.tt-wiki.net/wiki/NMLTutorial">tutorial</a></li>
-                <li><a href="https://www.openttd.org/en/download-grfcodec">grfcodec</a> Compiles NewGRF's low-level programming language NFO into a GRF file. Use the enclosed nforenum to check the code for sanity. See also the <a href="http://newgrf-specs.tt-wiki.net/wiki/Main_Page">specs</a> and <a href="http://www.tt-wiki.net/wiki/NFOTutorial">tutorial</a>.</li>
-                <li><a href="https://www.openttd.org/en/download-catcodec">catcodec</a> Compiles the sound set description file (sfo) and the sounds into a sound set</li>
-            </ul>
-            <p>For further help see the <a href="https://wiki.openttd.org/Development">wiki</a>, the <a href="http://dev.openttdcoop.org">DevZone</a> or visit the <a href="http://www.tt-forums.net/viewforum.php?f=66">forums</a>.</p>
-            <p>NewGRFs can be made available to players via the <a href="https://bananas.openttd.org/en/manager/">online content</a>.</p>
-        </div>
-    </div>
-    <div class="section-header">
-        <div class="section-icon"></div>
-        <h3>Development of AIs and Game Scripts</h3>
-    </div>
-    <div class="section-item">
-        <div class="content">
-            <p>OpenTTD provides a script interface, which is used to provide computer players or altered game behaviour and goals.</p>
-            <p>Scripts and associated libraries are written in squirrel (version 2) and need to make use of OpenTTD's API for Scripts. Useful resources include:</p>
-            <ul>
-                <li><a href="https://noai.openttd.org/api/">NoAI API</a> API for OpenTTD's AIs.</li>
-                <li><a href="https://nogo.openttd.org/api/">NoGo API</a> API for OpenTTD's Game Scripts.</li>
-                <li><a href="https://wiki.openttd.org/AI:Main_Page">Wiki</a>  Wiki section dedicated to Script development.</li>
-                <li><a href="https://www.tt-forums.net/viewforum.php?f=65">Forum</a> Forum dedicated to OpenTTD's Script development.</li>
-                <li><a href="http://squirrel-lang.org/doc/squirrel2.html">Squirrel 2 Reference</a> Reference manual for the squirrel language.</li>
-            </ul>
-            <p>Scripts can be made available to players via the <a href="https://bananas.openttd.org/en/manager/">online content</a>.</p>
-        </div>
     </div>
 </div>
